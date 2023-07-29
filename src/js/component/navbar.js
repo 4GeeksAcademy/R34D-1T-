@@ -9,11 +9,11 @@ export const Navbar = () => {
 		<nav className="navbar navbar-light mb-3">
 			<div className="container-fluid">
 				<Link to="/">
-					<span className="navbar-brand mb-0 h1"><img src={star_wars_logo} style={{height:"5rem"}}/></span>
+					<span className="navbar-brand mb-0 h1"><img src={star_wars_logo} style={{ height: "5rem" }} /></span>
 				</Link>
 				<div className="ml-auto">
 					<button type="button" className="btn btn-outline-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-						<i className="far fa-heart"></i> {store.favorites.length }
+						<i className="far fa-heart"></i> {store.favorites.length}
 					</button>
 					<ul className="dropdown-menu dropdown-menu-end">
 						{store.favorites.map(
